@@ -1,0 +1,19 @@
+# utilities
+numpy
+pandas
+
+# Face recognition
+scikit-learn
+dlib-bin
+# dlib-20.0.99-cp313-cp313-win_amd64.whl
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0
+
+#database related modules
+supabase #provide 1-2gb for storage
+bcrypt #provide hashing methods
+
+segno  #to genrate qr code
+pillow #image preprocessing
+
+streamlit #frontend lib
