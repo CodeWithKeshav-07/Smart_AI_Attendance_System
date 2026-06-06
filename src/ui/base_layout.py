@@ -4,22 +4,16 @@ def style_backgound_home():
     st.markdown("""
                 <style>
                     .stApp{
-                        background-color:#ffc75f !important;
+                        background-color:rgb(64, 61, 252,0.5) !important;
                     }
                 
                     .stApp div[data-testid="stColumn"]{
-                        height:260px !important;
+                        height:270px !important;
                         width:50px !important;
                         background-color:white !important;
                         margin-top:20px; !important;
                         padding-left:30px  !important;
                         border-radius:50px !important;
-                    }
-
-                    img{
-                        display:flex;
-                        align-items:center;
-                        width:100px;
                     }
                 </style>
                 """,
@@ -30,7 +24,7 @@ def style_backgound_dashboard():
     st.markdown("""
                 <style>
                     .stApp{
-                        background-color:#fcba03 !important;
+                        background-color:rgb(186, 122, 245,0.3) !important;
                     }
                 </style>
                 """,
@@ -54,20 +48,19 @@ def style_base_layout():
                 
                     h1{
                         font-family:'Climate Crisis',sans-sarif !important;
-                        font-size:2.5rem !important;
+                        font-size:3.5rem !important;
                         text-align:center !important;
-                        line-height:0.9 !important;
+                        line-height:1 !important;
                         margin:0rem !important;
-                        color:#845ec2 !important;
+                        color:white !important;
                     }
                     
                 
                     h2{
                         font-family:'Climate Crisis',sans-sarif !important;
-                        font-size:1rem !important;
+                        font-size:2rem !important;
                         line-height:1.1 !important;
                         margin:0rem !important;
-                        color:#d65db1 !important;
                         
                     }
                 
@@ -90,8 +83,8 @@ def style_base_layout():
                         background-color:#5865F2 !important;
                         border-radius:15px !important;
                         padding:0 20px !important;
-                        margin-top:30px !important;
-                        margin-bottom:10px !important;
+                        margin-top:5px !important;
+                        margin-bottom:5px !important;
                         color:white !important;
                         border:none !important;
                         transition:transform 0.25s ease-in-out !important;
@@ -107,7 +100,7 @@ def style_base_layout():
                     }
                     
                     button:hover{
-                       transform:scale
+                       transform:scale(1.05)
                     }
 
                 </style>
