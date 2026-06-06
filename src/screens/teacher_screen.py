@@ -200,12 +200,13 @@ def teacher_tab_attendance_records():
     records=get_attendance_for_teacher(teacher_id)
     
     if not records:
+        st.info("No attendance records found.")
         return 
     
     data=[]
     
     for r in records:
-        ts=r.get("timestamp")
+        ts=r.get("timestamps")
         data.append({
             "ts_grp":ts.split(".")[0] if ts else None,
             "Time":datetime.fromisoformat(ts).strftime("%d-%m-%Y %H:%M %p") if ts else "N'A",
@@ -224,7 +225,7 @@ def teacher_tab_attendance_records():
     )
     
     summary['Attendance Stats']=(
-        "✅" + summary["Present"].astype(str) + "/" + summary["Total"].astype(str) + "Students"
+        "✅" + summary["Present"].astype(str) + "/" + summary["Total"].astype(str) + " Students"
     )
     
     display_df=(summary.sort_values(by="ts_grp",ascending=True)
