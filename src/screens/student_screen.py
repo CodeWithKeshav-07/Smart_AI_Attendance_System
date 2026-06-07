@@ -48,12 +48,12 @@ def student_dashboard():
             sub_id=log['subject_id']
             
             if sub_id not in stats_map:
-                stats_map['sub_id']={'Total':0,'Attended':0}
+                stats_map[sub_id]={'Total':0,'Attended':0}
                 
-            stats_map['sub_id']['Total']+=1
+            stats_map[sub_id]['Total']+=1
             
             if logs.get('is_present'):
-                stats_map['sub_id']['Attended']+=1
+                stats_map[sub_id]['Attended']+=1
        
         cols=st.columns(2)
         for i,sub_node in enumerate(subjects):
