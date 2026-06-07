@@ -2,7 +2,7 @@ import streamlit as st
 from src.database.db import create_attendance
 
 def show_attendance_result(df,logs):
-    st.write("Please review the attendance before confirming")
+    st.write("Please review the attendance before confirming.Absent students are automatically marked as well")
     st.dataframe(df,hide_index=True,width="stretch")
     
     c1,c2=st.columns(2)
